@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Oterp-Back-end")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5499b904c4deab960402b250ea9e33081c1bae8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6faf8e826f0693818cace0e426e8c4c74da9741b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Oterp-Back-end")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Oterp-Back-end")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
