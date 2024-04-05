@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Oterp-Back-end\\Oterp-Back-end.csproj": {}
+    "d:\\Projects\\Oterp-Back-end\\Oterp-Back-end.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Oterp-Back-end\\Oterp-Back-end.csproj": {
+    "d:\\Projects\\Oterp-Back-end\\Oterp-Back-end.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Oterp-Back-end\\Oterp-Back-end.csproj",
+        "projectUniqueName": "d:\\Projects\\Oterp-Back-end\\Oterp-Back-end.csproj",
         "projectName": "Oterp-Back-end",
-        "projectPath": "D:\\Projects\\Oterp-Back-end\\Oterp-Back-end.csproj",
+        "projectPath": "d:\\Projects\\Oterp-Back-end\\Oterp-Back-end.csproj",
         "packagesPath": "C:\\Users\\mauro\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Oterp-Back-end\\obj\\",
+        "outputPath": "d:\\Projects\\Oterp-Back-end\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,9 +49,29 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
