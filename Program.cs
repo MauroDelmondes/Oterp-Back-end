@@ -7,8 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<CountriesContext>(opt =>
-  opt.UseInMemoryDatabase("CountriesList"));
+builder.Services.AddDbContext<OterpContext>(opt =>
+  opt.UseInMemoryDatabase("OterpDb"));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

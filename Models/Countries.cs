@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace OterpBackend.Models;
 
 public class Countries
 {
-  public int Id { get; set; }
+  [Key]
+  public int IDCountry { get; set; }
   public string? CountryName { get; set; }
 }
