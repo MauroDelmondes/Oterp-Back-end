@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4dJsa5NBtRgbBOIcoLSpBVFiOb/qQUv+CKohifgA4mEIsbCZJApX5/AkcF9sFWnW5VEv9IlDU6CRxWKXQ+qrJw==",
+  "dgSpecHash": "HhGtbzVR4E1WYQWkyk7CZI/Nq3BBs5liw1wJzMJJ2Xg9g6+NbnS7NScEIZF62mOjKWGu/nXspSOKl9HY7rsKoQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Oterp-Back-end\\Oterp-Back-end.csproj",
+  "projectFilePath": "d:\\Projects\\Oterp-Back-end\\Oterp-Back-end.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mauro\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\mauro\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
