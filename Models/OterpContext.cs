@@ -8,10 +8,11 @@ public class OterpContext : DbContext
   {
   }
 
-  public DbSet<Countries> CountriesList { get; set; } = null!;
-  public DbSet<States> StatesList { get; set; } = null!;
-  public DbSet<Cities> CitiesList { get; set; } = null!;
-  public DbSet<Cities> CompaniesList { get; set; } = null!;
-
-  public DbSet<OterpBackend.Models.Companies> Companies { get; set; } = default!;
+  public DbSet<Country> CountryList { get; set; } = null!;
+  public DbSet<State> StateList { get; set; } = null!;
+  public DbSet<City> CityList { get; set; } = null!;
+  public DbSet<Company> CompanyList { get; set; } = null!;
+  public DbSet<UserType> UserTypeList { get; set; } = null!;
+  public DbSet<User> UserList { get; set; } = null!;
+  public DbSet<Product> ProductList { get; set; } = null!;
 }
