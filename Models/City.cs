@@ -4,7 +4,7 @@ using Microsoft.Identity.Client;
 
 namespace OterpBackend.Models;
 
-public class Cities
+public class City
 {
   [Key]
   public int IDCity { get; set; }
@@ -12,7 +12,7 @@ public class Cities
   public int IDState { get; set; }
   public string? CityName { get; set; }
 
-  public States? States { get; set; }
+  public State? State { get; set; }
 
-  public ICollection<Companies>? CompaniesList { get; set; }
+  public ICollection<Company>? Companies { get; set; }
 }

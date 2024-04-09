@@ -4,7 +4,7 @@ using NuGet.Protocol.Plugins;
 
 namespace OterpBackend.Models;
 
-public class States
+public class State
 {
   [Key]
   public int IDState { get; set; }
@@ -12,7 +12,7 @@ public class States
   public int IDCountry { get; set; }
   public string? StateName { get; set; }
 
-  public Countries? Countries { get; set; }
+  public Country? Country { get; set; }
 
-  public ICollection<Cities>? CitiesList { get; set; }
+  public ICollection<City>? Cities { get; set; }
 }
