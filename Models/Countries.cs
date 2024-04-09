@@ -7,4 +7,6 @@ public class Countries
   [Key]
   public int IDCountry { get; set; }
   public string? CountryName { get; set; }
+
+  public ICollection<States>? StatesList { get; set; }
 }

@@ -8,9 +8,11 @@ public class States
 {
   [Key]
   public int IDState { get; set; }
+  [ForeignKey("IDCountry")]
   public int IDCountry { get; set; }
   public string? StateName { get; set; }
 
-  [ForeignKey("IDCountry")]
   public Countries? Countries { get; set; }
+
+  public ICollection<Cities>? CitiesList { get; set; }
 }

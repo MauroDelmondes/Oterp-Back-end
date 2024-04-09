@@ -11,4 +11,7 @@ public class OterpContext : DbContext
   public DbSet<Countries> CountriesList { get; set; } = null!;
   public DbSet<States> StatesList { get; set; } = null!;
   public DbSet<Cities> CitiesList { get; set; } = null!;
+  public DbSet<Cities> CompaniesList { get; set; } = null!;
+
+  public DbSet<OterpBackend.Models.Companies> Companies { get; set; } = default!;
 }
