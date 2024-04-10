@@ -1,11 +1,14 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace OterpBackend.Models;
 
-public class Company
+public class Provider
 {
   [Key]
+  public int IDProvider { get; set; }
+  [ForeignKey("IDCompany")]
   public int IDCompany { get; set; }
   [ForeignKey("IDCountry")]
   public int IDCountry { get; set; }
@@ -24,10 +27,8 @@ public class Company
   public string? Email { get; set; }
   public string? PhoneNumber { get; set; }
 
+  public Company? Company { get; set; }
   public Country? Country { get; set; }
   public State? State { get; set; }
   public City? City { get; set; }
-
-  public ICollection<Provider>? Providers { get; set; }
-  public ICollection<Customer>? Customers { get; set; }
 }
