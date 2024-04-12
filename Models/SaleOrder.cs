@@ -7,19 +7,26 @@ public class SaleOrder
 {
   [Key]
   public int IDSaleOrder { get; set; }
-  [ForeignKey("IDCustomer")]
+  [Required]
   public int IDCustomer { get; set; }
-  [ForeignKey("IDCompany")]
+  [Required]
   public int IDCompany { get; set; }
-  [ForeignKey("IDOrderStatus")]
+  [Required]
   public int IDOrderStatus { get; set; }
+  [Required]
   public DateTime OrderDate { get; set; }
+  [Required]
   public decimal AmountValue { get; set; }
+  [Required]
   public decimal AmountValueDiscount { get; set; }
+  [Required]
   public decimal PercentageDiscount { get; set; }
 
+  [ForeignKey("IDCompany")]
   public Company? Company { get; set; }
-  public Customer? customer { get; set; }
+  [ForeignKey("IDCustomer")]
+  public Customer? Customer { get; set; }
+  [ForeignKey("IDOrderStatus")]
   public OrderStatus? OrderStatus { get; set; }
 
   public ICollection<SaleOrderItem>? SaleOrderItems { get; set; }
