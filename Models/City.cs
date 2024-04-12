@@ -8,10 +8,12 @@ public class City
 {
   [Key]
   public int IDCity { get; set; }
-  [ForeignKey("IDState")]
+  [Required]
   public int IDState { get; set; }
+  [Required]
   public string? CityName { get; set; }
 
+  [ForeignKey("IDState")]
   public State? State { get; set; }
 
   public ICollection<Company>? Companies { get; set; }

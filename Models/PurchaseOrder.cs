@@ -7,19 +7,26 @@ public class PurchaseOrder
 {
   [Key]
   public int IDPurchaseOrder { get; set; }
-  [ForeignKey("IDCompany")]
+  [Required]
   public int IDCompany { get; set; }
-  [ForeignKey("IDProvider")]
+  [Required]
   public int IDProvider { get; set; }
-  [ForeignKey("IDOrderStatus")]
+  [Required]
   public int IDOrderStatus { get; set; }
+  [Required]
   public DateTime OrderDate { get; set; }
+  [Required]
   public decimal AmountValue { get; set; }
+  [Required]
   public decimal AmountValueDiscount { get; set; }
+  [Required]
   public decimal PercentageDiscount { get; set; }
 
+  [ForeignKey("IDCompany")]
   public Company? Company { get; set; }
+  [ForeignKey("IDProvider")]
   public Provider? Provider { get; set; }
+  [ForeignKey("IDOrderStatus")]
   public OrderStatus? OrderStatus { get; set; }
 
   public ICollection<PurchaseOrderItem>? PurchaseOrderItems { get; set; }

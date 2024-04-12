@@ -8,16 +8,23 @@ public class SaleOrderItem
 {
   [Key]
   public int IDSaleOrderItem { get; set; }
-  [ForeignKey("IDSaleOrder")]
+  [Required]
   public int IDSaleOrder { get; set; }
-  [ForeignKey("IDProduct")]
+  [Required]
   public int IDProduct { get; set; }
+  [Required]
   public int ProductQuantity { get; set; }
+  [Required]
   public decimal ProductUnitPrice { get; set; }
+  [Required]
   public decimal ProductUnitValueDiscount { get; set; }
+  [Required]
   public decimal ProductUnitPercentageDiscount { get; set; }
+  [Required]
   public decimal ProductAmountValue { get; set; }
 
+  [ForeignKey("IDSaleOrder")]
   public SaleOrder? SaleOrder { get; set; }
+  [ForeignKey("IDProduct")]
   public Product? Product { get; set; }
 }
